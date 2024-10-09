@@ -4,18 +4,24 @@
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #189100;
+    border: solid 1px #000000;
     background-color: #21c700;
   }
 
   h1 {
     color:#000000;
-    font-family: 'Impact';
+    font-family: cursive;
     font-size: 200%;
   }
 
   h2 {
-    color:#0051bb;
-    font-family: 'Verdana';
-    font-size: 175%;
+    color: #0000b8;
+    font-family: Verdana;
+    font-size: 150%;
+  }
+
+  p {
+    color: #0000b8;
+    font-family: Geneva;
+    font-size: 125%;
   }
