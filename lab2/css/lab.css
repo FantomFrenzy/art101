@@ -30,5 +30,13 @@
     -webkit-text-stroke-width: 1px ;
     -webkit-text-stroke-color: black;
     font-family: 'Times New Roman';
+    text-indent: 25px;
     font-size: 125%;
+  } 
+
+  #content {
+    margin: 10px;
+    padding: 10px;
+    background-color: #219EBC;
+    border: dotted 5px whitesmoke;
   }
