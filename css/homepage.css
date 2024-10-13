@@ -1,6 +1,11 @@
 /* this css file will only style the homepage of our site */
+.selfie {
+  margin: 10px;
+  max-width: 500px;
+}
 
 .cat-photo {
   margin: 10px;
   max-width: 500px;
 }
+
