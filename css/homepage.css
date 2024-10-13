@@ -2,8 +2,6 @@
 .selfie {
   margin: 10px;
   max-width: 250px;
-  float: left;
-  border: 1px double black;
 }
 
 .cat-photo {
