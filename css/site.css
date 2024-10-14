@@ -30,26 +30,28 @@ h1 {
   letter-spacing: 3px;
   word-spacing: 3px;
   font-size: 200%;
-  outline: thick dashed #001f3d;
-  outline-offset: 5px;
-  
+  outline: thick ridge #001f3d;  
 }
 
 .mainpage {
   border: solid 1px  black;
   background-color: #b6cbe1;
-  padding: 1px;
+  padding-inline: 10px;
   margin: 25px;
   margin-left: 300px;
   margin-right: 25px;
-  margin-top: 20px;
-  
+  margin-top: 30px;
+  outline: 5px ridge #001f3d;
 }
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
-  padding: 5px;
-  margin-bottom: 10px;
-  border: solid 1px #888;
-  background-color: #A3C9A8;
+  border: solid 1px  black;
+  background-color: #b6cbe1;
+  padding-inline: 10px;
+  margin: 25px;
+  margin-left: 300px;
+  margin-right: 25px;
+  margin-top: 20px;
+  outline: 5px ridge #151983;
 }

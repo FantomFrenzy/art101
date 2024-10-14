@@ -11,3 +11,20 @@
   max-width: 500px;
 }
 
+.artsample1 {
+  margin: 10px;
+  max-width: 200px;
+  border: 10px ridge gray;
+}
+
+.artsample2 {
+  margin: 10px;
+  max-width: 325px;
+  border: 10px ridge gray;
+}
+
+.artsample3 {
+  margin: 10px;
+  max-width: 215px;
+  border: 10px ridge gray;
+}
