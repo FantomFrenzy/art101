@@ -2,7 +2,7 @@
 .selfie {
   margin: 10px;
   max-width: 250px;
-  border: 10px double black;
+  border: 10px ridge black;
 }
 
 .cat-photo {
