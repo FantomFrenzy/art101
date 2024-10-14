@@ -21,7 +21,9 @@ h2,h3 {
 
 /* and we can have rules that overlap other rules, both take effect */
 h1 {
-  margin: 10px; 
+  margin-left: 325px;
+  margin-right: 50px;
+  margin-bottom: 20px;
   border: 1px solid black;
   background-color: #1863d6;
   text-align: center;
@@ -30,12 +32,23 @@ h1 {
   font-size: 200%;
   outline: thick dashed #001f3d;
   outline-offset: 5px;
+  
 }
 
+.mainpage {
+  border: solid 1px  black;
+  background-color: #b6cbe1;
+  padding: 1px;
+  margin: 25px;
+  margin-left: 300px;
+  margin-right: 25px;
+  margin-top: 20px;
+  
+}
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
-  padding: 10px;
+  padding: 5px;
   margin-bottom: 10px;
   border: solid 1px #888;
   background-color: #A3C9A8;
