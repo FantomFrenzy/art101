@@ -34,12 +34,12 @@ h1 {
 
 
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
-#content {
-  /*margin: 10px;
+/*#content {
+  margin: 10px;
   padding: 10px;
   border: solid 1px black;
   background-color: #b6cbe1;
-}
+}*/
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
