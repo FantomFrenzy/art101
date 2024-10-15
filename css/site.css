@@ -60,3 +60,14 @@ h1 {
   margin-top: 20px;
   outline: 5px ridge #151983;
 }
+
+.linkfolder {
+  border: solid 1px  black;
+  background-color: #b6cbe1;
+  padding-inline: 10px;
+  margin: 25px;
+  margin-left: 300px;
+  margin-right: 25px;
+  margin-top: 20px;
+  outline: 5px ridge #001f3d;
+}
