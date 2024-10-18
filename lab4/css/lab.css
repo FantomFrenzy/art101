@@ -7,7 +7,6 @@
     margin-left: 250px;
     border: solid 1px black;
     background-color: cornflowerblue;
-    
   }
 
 pre {
@@ -33,3 +32,8 @@ p {
   text-indent: 50px;
 }
 
+.rps_game {
+  margin: 10px;
+  max-width: 200px;
+  border: 10px ridge gray;
+}
