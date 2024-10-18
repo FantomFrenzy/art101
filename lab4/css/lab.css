@@ -7,3 +7,20 @@
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
+
+p {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+#ex1 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  text-indent: 25px;
+}
+
+#ex2 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+  text-indent: 50px;
+}
