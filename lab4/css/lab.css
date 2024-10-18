@@ -4,9 +4,17 @@
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
+    margin-left: 250px;
+    border: solid 1px black;
+    background-color: cornflowerblue;
+    
   }
+
+pre {
+    overflow-x: auto; 
+    white-space: pre-wrap; 
+}
+/* CSS code above courtesy from ChatGPT (I was too tired and just got AI to help me) */
 
 p {
   margin-top: 2px;
