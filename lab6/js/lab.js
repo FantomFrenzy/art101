@@ -10,7 +10,7 @@ myTransport = ["Kia Soul", "Toyota Camry", "bike", "buses"];
 myMainRide = {
     make: "Kia",
     model: "Soul",
-    color: "Green"
+    color: "Green",
     year: 2012,
     // Defining a function within our object (a method) that uses the 
     // value of year above (using this.year)
