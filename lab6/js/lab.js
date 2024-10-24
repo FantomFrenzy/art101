@@ -4,7 +4,7 @@
 // Date: 24 October 2024
 
 // Defining Variables
-myTransport = ["Kia Soul", "Toyota Camry", "bike", "buses"];
+myTransport = ["Kia Soul", " Toyota Camry", " bike", " buses"];
 
 // Creatng object for my main ride
 myMainRide = {
@@ -15,7 +15,7 @@ myMainRide = {
     // Defining a function within our object (a method) that uses the 
     // value of year above (using this.year)
     age: function() {
-      return 2024 - this.year
+      return 2024 - this.year;
     }
 }
 
@@ -23,7 +23,7 @@ myMainRide = {
 document.writeln("Here are the kinds of transportation I use: ", myTransport, "</br>");
 // This allows us to write an object to the document
 document.writeln("My Main Ride: <pre>",
-  JSON.stringify(myMainRide, null, '\t'), "</pre>);
+  JSON.stringify(myMainRide, null, '\t'), "</pre>");
 
 function main() {
   console.log("Main function started.");
