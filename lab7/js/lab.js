@@ -1,21 +1,25 @@
 // index.js - purpose and description here
-// Author: Your Name
-// Date:
+/* 
+ *  Author: Ronie Antonio and Ben Awtry
+ *  Emails: <rantoni1@ucsc.edu> and <bawtry@ucsc.edu>
+ *  Created: 28 Oct 2024
+ *  License: Public Domain
+ */
 
-// Constants
+// sortUserName - takes input & sorts the letters of the input's name
+function sortUserName() {
+    var userName = window.prompt("I woke up from my coma to turn off 'Thick of It' by KSI. Who are you again?");
+    console.log("userName =", userName);
 
-// Functions
+    // Split the string to an array + sort the array + join the array to a string
+    var sortedName = userName.split('').sort().join('');
+    console.log("sortedName =", sortedName);
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+    // Return sorted name
+    return sortedName;
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
-
-// let's get this party started
-main();
+// Output
+document.writeln("I just woke up from my coma to turn off 'Thick of It' by KSI. Who are you again?", "</br>")
+document.writeln("I won't be able to remember your name. Therefore, I shall rename you: ",
+    sortUserName(), "</br>");
