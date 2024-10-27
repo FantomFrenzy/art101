@@ -22,4 +22,9 @@ function sortUserName() {
 // Output
 document.writeln("I just woke up from my coma to turn off 'Thick of It' by KSI. Who are you again?", "</br>")
 document.writeln("I won't be able to remember your name. Therefore, I shall rename you: ",
-    sortUserName(), "</br>");
+    sortUserName(), " Don't forget your nametag.", "</br>");
+
+// Using <div> with a class to make 
+// var nametag = sortUserName();
+// document.writeln('<div class="styledName">Hello world. I am ' + nametag + '.' +'</div>')
+

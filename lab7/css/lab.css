@@ -23,8 +23,21 @@ p {
     margin-right: 150px;
     margin-top: 10px;
     margin-bottom: 10px;
-    border: solid 1px #568203;
-    background-color: #568203;
-    border: 3px dotted #0b6623;
-    outline: 8px ridge #0b6623;
+    border: solid 1px whitesmoke;
+    background-color: whitesmoke;
+    border: 5px inset darkred;
+    outline: 10px ridge red;
+}
+
+.styledName {
+  color: black;
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+  border: 3px inset darkblue;
+  outline: 3px ridge blue;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: whitesmoke;
 }
