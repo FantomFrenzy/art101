@@ -1,21 +1,45 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+/* 
+ *  Author: Ronie Antonio and Ben Awtry
+ *  Emails: <rantoni1@ucsc.edu> and <bawtry@ucsc.edu>
+ *  Created: 5 November 2024
+ *  License: Public Domain
+ */
+$(document).ready(function() {
+//     // Using jQuery, create buttons for each section (challenge, problems, reflection & results)
+//     $("#title").append("<button id='button-title' class='custom'>Inverted Color Palette? (TuT)</button>")
+//     $("#challenge").append("<button id='button-challenge' class='custom'>Inverted Color Palette? (TuT)</button>")
+//     $("#problems").append("<button id='button-problems' class='custom'>Inverted Color Palette? (TuT)</button>")
+//     $("#reflection").append("<button id='button-reflection' class='custom'>Inverted Color Palette? (TuT)</button>")
+//     $("#results").append("<button id='button-results' class='custom'>Inverted Color Palette? (TuT)</button>")
 
-// Constants
+//     // Adds an event listener for each button
 
-// Functions
+//     $("#button-title").click(function() {
+//         $("#title").toggleClass("special");
+//     });
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
+//     $("#button-challenge").click(function() {
+//         $("#challenge").toggleClass("special");
+//     });
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+//     $("#button-problems").click(function() {
+//       $("#problems").toggleClass("special");
+//     });
 
-// let's get this party started
-main();
+//     $("#button-reflection").click(function() {
+//       $("#reflection").toggleClass("special");
+//     });
+
+//     $("#button-results").click(function() {
+//       $("#results").toggleClass("special");
+//   });
+// })
+
+    // Add a button to each section with 'special-section' class
+    $(".special-section").append("<button class='toggle-button custom'>Inverted Color Palette? (TuT)</button>");
+
+    // Add a click event listener to each button inside '.special-section'
+    $(".toggle-button").click(function() {
+        $(this).parent().toggleClass("special");  // Toggle 'special' class on the parent section
+    });
+})

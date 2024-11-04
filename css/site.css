@@ -25,7 +25,7 @@ h3 {
 }
 
 /* and we can have rules that overlap other rules, both take effect */
-h1 {
+.title-bar {
   margin-left: 325px;
   margin-right: 50px;
   margin-bottom: 20px;
