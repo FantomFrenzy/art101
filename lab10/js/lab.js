@@ -26,10 +26,16 @@ $("#make-convo").click(function(){
 });
 
 // Click listener for Submit button
-$("#submitButton").click(function(){
-  // Get userInput value
-  var input = $("#userInput").val();
-
-  // Append a new div to our output div
-  $("#output").append('<div class="userText"><p>' + input + '</p></div>');
+$("#submit-convo").click(function(){
+  // Get the user input from the input field
+  const userText = $("#userInput").val();
+  
+  // Check if input is not empty ()
+  if (userText.trim() !== "") { //courtsery of ChatGPT
+    // Append a new div with the user input to the output div, using userText class
+    $("#output").append('<div class="userText"><p>' + userText + '</p></div>');
+    
+    // Clear the input field for the next entry
+    $("#userInput").val('');
+  }
 });
