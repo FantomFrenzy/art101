@@ -31,7 +31,7 @@ $("#submit-convo").click(function(){
   const userText = $("#userInput").val();
   
   // Check if input is not empty ()
-  if (userText.trim() !== "") { //courtsery of ChatGPT
+  if (userText.trim() !== "") { //courtesy of ChatGPT
     // Append a new div with the user input to the output div, using userText class
     $("#output").append('<div class="userText"><p>' + userText + '</p></div>');
     
