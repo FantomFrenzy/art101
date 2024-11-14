@@ -5,6 +5,26 @@
  *  License: Public Domain
  */
 
+// Generate an anagram of a given string
+function anagram(inputString) {
+    // Convert the string to an array
+    const charArray = inputString.split('');
+
+    // Thank you Mr. Modes (: This shuffles the characters
+    for (let i = charArray.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [charArray[i], charArray[j]] = [charArray[j], charArray[i]];
+    }
+
+    // Join the shuffled characters backinto a string
+    const anagram = charArray.join('');
+    
+    // Return the generated anagram
+    return anagram;
+}
+
+
+
 // Sorts the characters of a string in alphabetical order.
 function sortString(inputString) {
     // Convert our string to an array and to sort it back again
