@@ -2,8 +2,59 @@
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
 .minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
-  }
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 25px;
+  margin-right: 25px;
+  border: ridge 16px burlywood;
+  background-color: green;
+  outline: none;
+}
+
+body {
+  font-family: Helvetica, Verdana, Arial, "san serif";
+  background-color: darkgray;
+  padding: 25px;
+  font-size: 100%;
+}
+
+h1, h2, p {
+  font-family: "Courier New", monospace;
+  text-decoration-line: none;
+}
+
+h1 {
+  margin-left: 0px;
+  margin-right: 15px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: hidden;
+  text-align:left;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  font-size: 180%;
+  outline: none;  
+}
+
+p {
+  font-size: 115%;
+}
+
+.emodmg {
+  max-width: 350px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  outline: ridge 8px grey;
+  margin-bottom: 15px; 
+}
+
+.output-container {
+  column-count: 5; /* Creates 5 vertical columns */
+  column-gap: 20px; /* Space between columns */
+}
+
+.output-container div {
+  margin-bottom: 5px; 
+}
