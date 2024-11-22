@@ -10,6 +10,7 @@
 function sortingHat(str) {
     len = str.length;
     mod = len % 4;
+    debugger; // Checks values of lens and mod
     if (mod == 0) {
         return "Gryffindor" + "<br>" + "<h4>House of the Brave and Determined</h4>" + 
         "<img id='sigil' src='./img/gryffindor.png'>";
@@ -33,7 +34,9 @@ function sortingHat(str) {
 var myButton = document.getElementById("submit");
 myButton.addEventListener("click", function() {
     var name = document.getElementById("input").value;
+    debugger; // Checks value of name from input
     var house = sortingHat(name);
+    debugger; // Verifies if the house is correct
     newText = "<p>The Sorting Hat has sorted you into " + house + "</p>";
     document.getElementById("output").innerHTML = newText;
 })
