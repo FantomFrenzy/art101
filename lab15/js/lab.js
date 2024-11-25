@@ -1,21 +1,47 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+/* 
+ *  Author: Ronie Antonio and Ben Awtry
+ *  Emails: <rantoni1@ucsc.edu> and <bawtry@ucsc.edu>
+ *  Created: 25 November 2024
+ *  License: Public Domain
+ */
 
-// Constants
+// URL for Yes or No? API
+const URL = "https://yesno.wtf/api";
 
-// Functions
+// Attach click action to button
+$('#activate').click(function () {
+    // Using the core $.ajax() method
+    $.ajax({
+        url: URL,
+        // No additional data to send
+        data: {},
+        // Whether this is a POST or GET request
+        type: "GET",
+        // The type of data we expect back
+        dataType: "json"
+    })
+    // If the request succeeds
+    .done(function (data) {
+        console.log(data); // Log the API response
 
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
+        // Make the JSON data printable (I didn't know how to do it so I
+        // got inspiration from Wes Modes and a little ChatGPT for help)
+        var printableData = "<pre>" + JSON.stringify(data, null, 2) + "</pre>";
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+        // Update the webpage dynamically with API data
+        //$("#output").append(printableData); // Display raw JSON data
+        $("#output").append("<p>The answer is: <b>" + data.answer + "</b></p>"); // Show the answer
+        $("#output").append("<img src='" + data.image + "' alt='Response Image'>"); // Show the image
 
-// let's get this party started
-main();
+        // Example title placeholder (using the 'answer' field as a title)
+        //$("#title").html("The Answer is: " + data.answer);
+
+        // Add a fun explanation (hardcoded as the API doesn't provide one)
+        $("#output").append("<p>Explanation: Sometimes you just need a simple yes or no!</p>");
+    })
+    // If the request fails
+    .fail(function (jqXHR, textStatus, errorThrown) {
+        console.log("Error:", textStatus, errorThrown);
+        $("#output").html('<p>Error fetching data. Please try again.</p>');
+    });
+});
