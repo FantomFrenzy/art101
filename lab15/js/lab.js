@@ -30,13 +30,13 @@ $('#activate').click(function () {
 
         // Update the webpage dynamically with API data
         //$("#output").append(printableData); // Display raw JSON data
-        $("#output").append("<p>The answer is: <b>" + data.answer + "</b></p>"); // Show the answer
-        $("#output").append("<img src='" + data.image + "' alt='Response Image'>"); // Show the image
+        $("#output").append("<p>The answer is: <b>" + data.answer + "</b></p>");
+        $("#output").append("<img src='" + data.image + "' alt='Response Image'>"); 
 
         // Example title placeholder (using the 'answer' field as a title)
         //$("#title").html("The Answer is: " + data.answer);
 
-        // Add a fun explanation (hardcoded as the API doesn't provide one)
+        // Add a fun explanation (:
         $("#output").append("<p>Explanation: Sometimes you just need a simple yes or no!</p>");
     })
     // If the request fails
