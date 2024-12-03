@@ -5,39 +5,32 @@
  *  License: Public Domain
  */
 
-// Bind a click event to the button with ID "activate"
-$("#activate").click(function() {
-        // Fetch the XKCD comic data using AJAX
-        $.ajax({
-            // URL for the request to fetch comic data
-            url: "https://xkcd.com/info.0.json",
-            // Type of request (GET)
-            type: "GET",
-            // Expecting JSON data from the API
-            dataType: "json",
-            // Success callback function when the request succeeds
-            success: function(comicObj) {
-                // Clear the previous content in the output div
-                $("#output").empty();
+// Define the API endpoint
+let endpoint = "https://api.nasa.gov/planetary/apod";
 
-                // Create the title element with the comic title
-                var comicTitle = $("<h3></h3>").text(comicObj.title);
-                
-                // Create the image element with the comic image
-                var comicImage = $("<img />", {
-                    src: comicObj.img,       // Set image source from the object
-                    alt: comicObj.alt,       // Set alt text from the object
-                    title: comicObj.alt      // Set title text to match the alt attribute
-                });
-                
-                // Append the title and image to the output div
-                $("#output").append(comicTitle).append(comicImage);
-            },
-            // Error callback if the request fails
-            error: function(jqXHR, textStatus, errorThrown) {
-                // Log any errors to the console and display an error message in the output div
-                console.log("Error:", textStatus, errorThrown);
-                $("#output").text("Failed to load the comic. Please try again later.");
-            }
-        });
-    });
+// Configure the AJAX request
+let ajaxConfig = {
+    url: endpoint, // API URL
+    method: "GET", // HTTP method
+    contentType: "json", // Payload type
+    data: {
+        api_key: "JngLcxjqOJEtlSZx3UuNH5ssWCx5movzWT31rjtN", // API token
+        count: 1,
+    },
+    success: function(data) {
+        console.log(data);
+        let record = data[0];
+        // Add title, image, and description to output
+        $("#output").append("<h2>" + record.title);
+        $("#output").append(`<img src='${record.url}' width='350'/>`);
+        $("#output").append("<p>" + record.explanation);
+    },
+    error: function(xhr, status, error) { // Error handler
+        console.log(error);
+    }
+};
+
+// Send AJAX Request
+$('#activate').click(function () {
+    $.ajax(ajaxConfig);
+});

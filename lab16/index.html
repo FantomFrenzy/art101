@@ -20,26 +20,27 @@
 				<h1>Lab 16 - JSON and</h1>
 
 				<h2>Challenge</h2>
-				<p>The challenge for this lab for us to use the .ajax method to get 
-					info/data from external sources such as APIs
+				<p>The challenge for this lab was to use AJAX to connect to an API and process 
+					JSON from it so we can display parts of it on our webpage.
 				</p>
 
 				<h2>Problems</h2>
-				<p>We encountered very little problems while using .ajax() until we reached 
-					the part where we need to output something. After analyzing Wes' code, 
-					we realized that all we needed to make the JSON printable using var and 
-					output through $("#output").append().
+				<p>One problem we experienced was the XKCD API that we were originally 
+					going to use was causing some errors, so we switched to the 
+					NASA APOD API since it didn't have the same issue.
 				</p>
 
 				<h2>Reflection</h2>
-				<p>This lab allowed us to experiment with jQuery's ajax method to fetch data 
-					from external APIs and display the following results on a webpage.
+				<p>After our initial struggles with the XKCD API, we were able to fairly 
+					smoothly make the JS for this lab based on what we did in 
+					class. It allowed us to learn connect to APIs and get and 
+					display the specific JSON data we want using the data. function. 
+					By adding the count: 1 to data section of the AJAX request, we were able
+					to pull a random picture of the day.
 				</p>
 
 				<h2>Results</h2>
-
-				<button id="activate">Load XKCD Comic</button>
-				<h2 id="title">Comic Output</h2>
+				<button id="activate">Activate!</button>
 				<div id="output"></div>
 			</div>
 		</section>
